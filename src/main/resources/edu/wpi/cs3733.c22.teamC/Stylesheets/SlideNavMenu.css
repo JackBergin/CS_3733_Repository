@@ -1,0 +1,7 @@
+.JFXButton{
+    -fx-opacity: 1;
+}
+
+.JFXButton:hover{
+    -fx-opacity: .8;
+}

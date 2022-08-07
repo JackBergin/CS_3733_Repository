@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamC.controllers.HelpPageController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <GridPane style="-fx-background-color: #009f9f;" BorderPane.alignment="CENTER">
+              <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="55.0" />
+              </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints maxWidth="1.7976931348623157E308" />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <children>
+                  <Label fx:id="Banner" alignment="CENTER" prefHeight="55.0" prefWidth="6000.0" text="HELP PAGE" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="backButton" onAction="#backButtonPressed" prefHeight="55.0" prefWidth="55.0" ripplerFill="BLACK" text="&lt;" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="LEFT">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </top>
+         <center>
+            <ScrollPane fitToWidth="true" prefHeight="648.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <content>
+                  <GridPane maxWidth="900.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="900.0" minWidth="10.0" prefWidth="229.33329264322916" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="900.0" minWidth="10.0" prefWidth="554.6667073567709" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" prefHeight="19.33331298828125" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="10.0" vgrow="NEVER" />
+                    </rowConstraints>
+                     <children>
+                        <Label lineSpacing="5.0" maxWidth="900.0" minWidth="-Infinity" text="Creating a Service Request:" textFill="#1c5099" GridPane.columnIndex="1" GridPane.hgrow="NEVER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="900.0" text="Select the service request page for the request you are looking to create from either the side menu or the systems service page. You must fill out all the fields on the request page before submitting otherwise the request will not submit. For each page this will include at least &#10;- Location of where the request needs to be done&#10;- Assignment to the staff memeber that is expected to complete the request&#10;- Status whether the request has been completed or not (you will most likely set this to waiting  when you create the request)&#10;Lastly you hit submit and you will recieve a push notification to show the request has gone through, you can also hit clear to reset the page&#10;" textFill="#477ccc" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="900.0" minWidth="-Infinity" text="Viewing a Service Request:" textFill="#1c5099" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="900.0" text="You are able to view the service requests made in two main locations&#10;1) The Order Tracker Page, you can access through the side menu where you can view the status of all the requests and who they are assigned to. You may also update the status of the requests through this page or delete it entirely.&#10;2) The Map Editor Page, you can see the service request created depending on the location they were assigned to be completed at. You may also cancel the requests through the map by right-clicking on the icon of the request on the map and then selecting the x to cancel it." textFill="#477ccc" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="900.0" minWidth="-Infinity" text="Side View Map:" textFill="#1c5099" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="900.0" text="When selected from the side menu this will display the general outline of the hospital's tower with the floors outlined. On the left of each floor in green numbers is the amount of clean equipment on each floor and on the right in red is the number of dirty equipment on each floor. If you select a specific floor you are able to see in more detail which specific equipment is on each floor and whether or not it is dirty and their locations on the floor." textFill="#477ccc" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="900.0" minWidth="-Infinity" text="Map Editor:" textFill="#1c5099" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="900.0" minWidth="-Infinity" text="Viewing" textFill="#1c5099" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="900.0" minWidth="-Infinity" text="Editing" textFill="#1c5099" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="900.0" text="If you want to change the location of a location icon, as long as it is clear of equipment you can drag it to a new spot or right-click the icon and select move and use the feature tree, you can also choose to delete this location if there is no equipment.&#10;If you want to add a location you click on a new spot on the map and hit the green add button and you then fill out the required fields.&#10;To move medical equipment you can click and drag it near the next location or you may right-click and use the feature tree to select a new location. &#10;You may also edit the properties of this peice of equipment and mark it as dirty.&#10;After any changes you have to click update for the icon and save on the Map Editor for it to save you changes." textFill="#477ccc" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="900.0" minWidth="-Infinity" text="Path Finder" textFill="#1c5099" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="11">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="900.0" text="To use Path finder you right-click the location you would like to start at and hit the start button. &#10;You then right-click the location on any floor you would like to end on and select the end button. &#10;The computer path button in the top right of the page will now be visible and you can select this. &#10;The shortest path will then be displayed.&#10;If you would like a path to be shown for avoiding stairs you can select the disable stairs mark at the top of the page so it will only show paths using elevators." textFill="#477ccc" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label lineSpacing="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="900.0" text="You can choose which icons are shown on the map by checking the specific icons you would like to see displayed in the top right corner. &#10;You are able to change floors by clicking the number of floor you would like to go to with the buttons in the top left of the map editor.&#10;You can zoom using a track pad by pinching in or out." textFill="#477ccc" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../Stylesheets/ServiceRequestConstants.css" />
+      <URL value="@../Stylesheets/SanitationServices.css" />
+   </stylesheets>
+</AnchorPane>

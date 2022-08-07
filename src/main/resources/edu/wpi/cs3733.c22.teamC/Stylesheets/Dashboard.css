@@ -1,0 +1,34 @@
+#anchorPane #hBox{
+    -fx-background-color: #E8E8E8;
+}
+
+#anchorPaneVBox {
+    -fx-background-color: #FFF;
+}
+
+#anchorPaneUser {
+    -fx-background-color: #FFF;
+}
+
+#trackOrdersButton {
+    -fx-background-color: #1F58AF !important;
+}
+
+#dashboardLabel {
+    -fx-background-color: #1F58AF !important;
+}
+
+#progressCircle {
+    -fx-progress-color: #1F58AF !important;
+}
+
+#progressCircle .percentage {
+    -fx-fill: null;
+}
+
+#progressCircle .tick {
+    -fx-background-color: #1F58AF !important;
+}
+
+
+
